@@ -1,0 +1,20 @@
+# mysql 数据源配置
+mysql:
+  datasource:
+    url: jdbc:mysql://localhost:3308/sysuser?serverTimezone=GMT&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+# oracle 数据源配置
+oracle:
+  datasource:
+    url: jdbc:oracle:thin:@127.0.0.1:1522:oracl
+    username: scott
+    password: tiger
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+mybatis:
+  type-aliases-package: com.zoro.multi.datasource.entity
+#  mapper-locations: classpath*:mapper/*.xml
+server:
+  port: 7000

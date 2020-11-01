@@ -1,0 +1,5 @@
+1、在application-multi.yml文件中配置多个数据源
+2、在config包内分别配置数据源、事务管理器等信息，注意需要知道主数据源 @Primary
+3、将@MapperScan包扫描放到对应的配置类中，不在启动类上进行配置
+
+项目同时配置了oracle和mysql
